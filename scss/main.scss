@@ -7,7 +7,7 @@ html {
 }
 
 main {
-    margin-bottom: 250px;
+    margin-bottom: 260px;
 }
 
 footer.footer {
@@ -45,6 +45,8 @@ footer.footer {
         align-items: center;
         justify-content: center;
     }
+
+
 }
 
 p {
@@ -59,12 +61,12 @@ p {
 .image-card{
     position:relative;
     &:hover{
-        .titre-image{
+        .titre-image,
+        .action-image-buttons{
             opacity: 1;
         }
-        img{
-            filter: brightness(0.3);
-        }
+
+
     }
 
     img{
@@ -76,6 +78,18 @@ p {
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .action-image-buttons{
+        position : absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
         opacity: 0;
         transition: all 0.3s;
     }
@@ -230,3 +244,15 @@ p{
     margin-bottom: 30px;
     margin-right: 20%;
   }
+
+/*reservation*/
+
+.allreservations {
+    a{
+        display: block;
+        color: $black;
+        padding: 10px;
+
+
+    }
+}
