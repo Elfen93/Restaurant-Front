@@ -7,7 +7,7 @@ html {
 }
 
 main {
-    margin-bottom: 216px;
+    margin-bottom: 250px;
 }
 
 footer.footer {
@@ -19,8 +19,10 @@ footer.footer {
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
+
         position: absolute;
         top:0;
         left:0;
@@ -37,7 +39,7 @@ footer.footer {
     }
 
     .hero-scene-content{
-        height: 250px;
+        height: 180px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,3 +80,153 @@ p {
         transition: all 0.3s;
     }
 }
+
+/* CSS menu*/
+.pdej-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.Entrées {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.dej-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+
+.Déjeuner {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.din-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+
+.Dinner {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.vin-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+
+.Vins {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+h3.menu-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3, h5, p {
+    margin: 10px 0;
+}
+
+h3 {
+    font-family: $font-family-serif;
+    font-size: 2em;
+    color: $primary;
+}
+
+h4 {
+    font-family: $font-family-sans-serif;
+    font-size: 24px;
+    color: $dark;
+    font-weight: bold;
+}
+
+h5 {
+
+    font-size: 20px;
+
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.highlight {
+    font-family: $font-family-serif;
+    color: $secondary;
+    font-style: italic;
+}
+
+.special {
+    font-family: $font-family-serif;
+    color: $primary;
+    font-weight: bold;
+  }
+
+p{
+    font-family: $font-family-sans-serif;
+    font-size: 14px;
+  }
+
+  /*connection*/
+  .form-label {
+  color: $primary;
+  }
+
+  .connection-container {
+    margin-left: 20%;
+    margin-bottom: 30px;
+    margin-right: 20%;
+  }
