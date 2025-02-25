@@ -1,36 +1,42 @@
 <div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
-        <h1>Inscrivez-vous !</h1>
-    </div>
+  <div class="hero-scene-content">
+      <h1>Inscrivez-vous !</h1>
+  </div>
 </div>
 
 <div class="connection-container">
-    <form>
-        <div class="mb-3">
-            <label for="NomInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom">
-          </div>
-          <div class="mb-3">
-            <label for="PrenomInput" class="form-label">Prenom</label>
-            <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prenom" name="Prenom">
-          </div>
-        <div class="mb-3">
+  <form>
+      <div class="mb-3">
+          <label for="NomInput" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom">
+      </div>
+      <div class="mb-3">
+          <label for="PrenomInput" class="form-label">Prenom</label>
+          <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prenom" name="Prenom">
+      </div>
+      <div class="mb-3">
           <label for="EmailInput" class="form-label">Email</label>
           <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email">
-        </div>
-        <div class="mb-3">
+      </div>
+      <div class="mb-3">
           <label for="PasswordInput" class="form-label">Mot de passe</label>
           <input type="password" class="form-control" id="PasswordInput" name="Password">
-        </div>
-        <div class="mb-3">
-            <label for="ValidatePasswordInput" class="form-label">Validez votre Mot de passe</label>
-            <input type="password" class="form-control" id="ValidatePasswordInput" name="Password">
+          <div class="invalid-feedback">
+              Le mot de passe doit contenir entre 8 et 20 caractères, incluant au moins une majuscule, une minuscule, un chiffre et un symbole.
           </div>
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Inscription</button>
-        </div>
-    </form>
-    <div class="text-center pt-3">
-        <a href="/signin">Vous avez déjà un compte ? Connectez-vous ici !</a>
-    </div>
+      </div>
+      <div class="mb-3">
+          <label for="ValidatePasswordInput" class="form-label">Validez votre Mot de passe</label>
+          <input type="password" class="form-control" id="ValidatePasswordInput" name="ConfirmPassword">
+          <div class="invalid-feedback">
+              Le mot de passe doit être identique.
+          </div>
+      </div>
+      <div class="text-center">
+          <button type="submit" class="btn btn-primary" id="btn-validation-inscription" disabled>Inscription</button>
+      </div>
+  </form>
+  <div class="text-center pt-3">
+      <a href="/signin">Vous avez déjà un compte ? Connectez-vous ici !</a>
+  </div>
 </div>
